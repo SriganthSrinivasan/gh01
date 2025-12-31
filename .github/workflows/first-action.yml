@@ -1,8 +1,9 @@
 name: First Workflow
-on: workflow_dispatch
+on: workflow_dispatch  # Trigger manually
+# on: [push, pull_request]  # Trigger on push or pull request
 jobs:
   first-job:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Specify the runner environment
     steps:
       - name: Print Greeting
         run: echo "Hello World"
